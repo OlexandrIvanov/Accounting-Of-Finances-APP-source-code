@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">DPH</string>
+    <string name="button_new_Expenses">NEW EXPENSE</string>
+    <string name="button_monthly_expenses">MONTHLY EXPENSES</string>
+    <string name="button_expenses_per_day">EXPENSES PER DAY</string>
+    <string name="def_category">Food</string>
+    <string name="new_category_hint">New category...</string>
+    <string name="textView_data">Date</string>
+    <string name="textView_time">Time</string>
+    <string name="textView_category">Category</string>
+    <string name="textView_sum">Sum</string>
+    <string name="editText_add_sum_hint">Add Sum</string>
+    <string name="toolbar_title">New expense</string>
+    <string name="toolbar_title_change">Change expense</string>
+    <string name="toast_select_a_category">Select a category</string>
+    <string name="toast_sum_is_empty">Sum is empty</string>
+    <string name="toast_category_not_added">Category not added</string>
+    <string name="toast_expense_save">Expense save</string>
+    <string name="per_month">Per month</string>
+    <string name="per_day">Per day</string>
+    <string name="no_expenses">There are no expenses for this period</string>
+    <string name="sum_per_month">Sum per month:</string>
+    <string name="sum_per_day">Sum per day:</string>
+    <string name="dialog_titles">Enter a new category name</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="date_format">yyyy-MM-dd</string>
+    <string name="remove_expense">The expense will be removed</string>
+    <string name="expense_deleted">Expense deleted</string>
+
+
+    <string name="test_str_l_v">Test String L. V.</string>
+    <string name="test_str_o_i">Test String O. I. 2</string>
+
+    <string name="test_str_l_v_2">Test String L. V. 2</string>
+
+    <string name="test_str_o_i_3">Test String O. I. 3</string>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ExpenditureStatisticsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_activity_expenditure_statics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <Spinner
+            android:id="@+id/spinner_activity_expenditure_statics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/month_switcher_activity_expenditure_statics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/toolbar_activity_expenditure_statics">
+
+        <ImageView
+            android:id="@+id/month_switcher_arrow_left_activity_expenditure_statics"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_chevron_left_black_24dp"/>
+
+        <TextView
+            android:id="@+id/month_switcher_title_activity_expenditure_statics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/month_switcher_arrow_right_activity_expenditure_statics"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_chevron_right_black_24dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/day_chooser_ll_activity_expenditure_statics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/month_switcher_activity_expenditure_statics"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/day_chooser_activity_expenditure_statics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/day_chooser_ll_activity_expenditure_statics">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:id="@+id/tableLayout_activity_expenditure_statics"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TableLayout>
+        </ScrollView>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:background="@color/colorBackgroundLight"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/sum_value_activity_expenditure_statics"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="700 S"/>
+
+        <TextView
+            android:id="@+id/sum_by_period_title_activity_expenditure_statics"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/sum_value_activity_expenditure_statics"
+            android:textSize="15sp"
+            android:text="@string/sum_per_month"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

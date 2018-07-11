@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ua.android.accountingoffinances.views.AllExpenseActivity">
+
+<!-- Toolbar is the actual app bar with text and the action items -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/activity_all_expense_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_all_expense_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/cardViewNewExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/activity_all_expense_app_bar" >
+
+        <TextView
+            android:id="@+id/textView_New_Expenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/button_new_Expenses"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/textViewAllExpenses"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_add_black_24dp"
+            android:scaleType="fitCenter" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewMonthlyExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/cardViewNewExpenses"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <TextView
+            android:id="@+id/textView_expense_per_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textViewMonthlyExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:focusableInTouchMode="false"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/button_monthly_expenses" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewExpensesPerDay"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/cardViewMonthlyExpenses"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/textViewDayExpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView_Expenses_Per_Day"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:focusableInTouchMode="false"
+            android:layout_marginStart="20dp"
+            android:text="@string/button_expenses_per_day" />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
